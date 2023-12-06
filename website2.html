@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyOnlinemeal.com</title>
+<!-- <link rel="stylesheet" href="style2.css"> -->
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alumni+Sans+Collegiate+One&family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet"></head>
+
+<link rel="stylesheet" media ="screen and (max-width: 1076px) " href="phone.css">
+<style>
+   *{
+margin: -4px;
+padding: 0px;
+}
+:root{
+--navbar-height: 59px;
+}
+#navbar{
+display: flex;
+align-items: center;
+position: relative;
+}
+#logo{
+margin: 6px 1px;
+
+}
+#logo img{
+height: 60px;
+margin: 4px 21px;  
+padding: 0px 0px; 
+background-color: blanchedalmond;  
+
+}
+
+#navbar ul{
+    display: flex;
+top: 132px;
+
+}
+#navbar ul li a{
+    color: rgb(13, 241, 63);
+    font-size: 20px;
+    font-weight: 900;
+display: block;
+padding: 2px 3px;
+/* font-style: inherit; */
+font-family: 'Abril Fatface', serif;
+/* font-style: normal; */
+/* font-weight: bold; */
+margin: -15px 3px;
+border-radius: 20px;
+text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: beige;
+    background-color: black;
+    }
+#navbar::before{
+content: "";
+background-color: black;
+position: absolute;
+height: 73%;
+top: 0px;
+left: 0px;
+width: 100%;
+z-index: -1;
+opacity: 0.3;
+/*  */
+}
+p{
+padding: -11px 73px;
+margin: 6px 19px;
+align-items: center;
+
+}
+#navbar ul li{
+list-style: none;
+margin: 12px 14px;
+padding: 0px 0px;
+}
+#home{
+    /* background-color: aqua; */
+display: flex;
+flex-direction: column;
+padding: 3px 200px;
+height: 473px;
+/* width: 250px; */
+justify-content: center;
+align-items: center;
+/* color: grey; */
+}
+/* to put resoluted image in background in site */
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('bg5.JPEG') no-repeat center center/cover;
+    height: 634px;
+
+    width: 100%;
+    z-index: -1;
+    opacity: 0.95;
+    top: -76px;
+    left: 0px;    
+    }
+
+#home p{
+    
+    display: flex;
+color:white;
+padding: -22px;
+font-weight: bolder;
+font-size: 1.1rem;
+/* background-color: rgb(238, 147, 10); */
+/* border: 2px solid hotpink; */
+text-align: center;
+font-size: 1.4rem;
+font-family: 'Barlow Condensed', sans-serif;
+
+}
+#contact{
+position: relative;
+}
+
+#contact::before{
+content: "";
+position: absolute;    
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.7;
+background: url('');
+
+}
+    
+
+
+
+
+.primary{
+    /* font-style: italic; */
+font-size: 3.1rem;
+padding: 12px;
+color: rgb(5, 179, 248);
+/* text-decoration: underline; */
+text-align: center;
+/* font-family: 'Alumni Sans Collegiate One', sans-serif; */
+/* font-family: 'Barlow Condensed', sans-serif; */
+font-family: 'Abril Fatface', serif;
+
+}
+/* utility classes */
+
+#home button{
+    margin: 17px;
+    height: 40px;
+width: 140px;
+font-size: large;
+border: 2px solid yellowgreen;
+font-weight: bold;
+border-radius: 15px;
+color: rgb(7, 206, 156);
+cursor: pointer;
+background-color: red;
+}
+/* hover to change funtinalities after pointer touch */
+#home button:hover{
+    color: black;
+    background-color: chocolate;
+}
+
+
+
+/* services */
+.h-primary{
+    font-size: 3.2rem;
+    padding: 12px;
+ text-align: center;
+    
+    }
+.h-secondry{
+font-size: 2.8rem;
+padding: 12px;
+text-align: center;
+}
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    border: 2.5px solid palevioletred;
+    margin: 3px 6px;
+    padding: 34px;
+    height: 250px;
+    border-radius: 24px;
+    background-color: rgb(223, 217, 233);
+    }
+#services .box img{
+    height: 154px;
+margin: auto;
+display: block;
+
+}
+.box p{
+    display: flex;
+    text-align: center;
+}
+.box h2{
+  font-size: 30px;  
+  font-family: 'Barlow Condensed', sans-serif;
+}
+#services .box p{
+font-size: 0.8rem;
+font-family: 'Barlow Condensed', sans-serif;
+
+}
+#clientsection{
+height: 344px;
+position: relative;
+}
+.services-container{
+background-color: chocolate;
+
+
+}
+.h-primarycenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      font-size: 50px;
+      font-family: 'Abril Fatface', serif;
+    }
+    
+
+#clients{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+#clientsection::before{
+content: "";
+position: absolute;
+background: url('foody.JPEG');
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.4;
+}
+
+
+#clients img{
+height: 110px;
+margin: 35px;
+padding: 4px;
+}
+
+#contact{
+    position: relative;
+    }
+    
+    #contact::before{
+    content: "";
+    position: absolute;    
+    width: 100%;
+    height: 110%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('contactus.JPEG') no-repeat center center/cover;
+    
+    }
+
+footer{
+background-color: black;
+color: aliceblue;
+padding: 9px 420px;
+margin: 27px 4px;
+width: 37%;
+height: 3%;
+position: absolute;
+}
+#contact h1{
+    display: flex;
+align-items: center;
+justify-content: center;
+font-size: 3.0rem;
+font-family: Arial, Helvetica, sans-serif;
+}
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: -115px;
+    /* background: url("let.JPEG"); */
+    background-color: darkorchid;
+}
+#contactbox form{
+   margin: 0px;
+    width: 40%;
+}
+.form-group{
+
+padding: 0px;
+margin: 0px;
+
+}
+#contactbox label{
+    font-size: 1.3rem;
+    width: 40%;
+}
+#contactbox input{
+padding: 0px 144px;
+margin: 0px 31px;
+border: 2px solid gray;
+border-radius: 7px;
+height: 30px;
+width: 154px;
+}
+#contactbox textarea{
+    border-radius: 9px;
+    width: 99%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+
+
+
+ 
+</style>
+<body>
+    <nav id="navbar">
+   <div id="logo">
+  <img src="dp1.JPEG" alt="MyOnlinemeal.com">
+   </div>  
+ <ul>
+<li class="item"><a href="#">Home</a></li>
+<li class="item"><a href="#">services</a></li>
+<li class="item"><a href="#">About us</a></li>
+<li class="item"><a href="#">contact us</a></li>
+
+ </ul>
+    </nav>
+<section id="home">
+<h1 class="primary">Welcome to My online meal  </h1>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iusto beatae eum .</p>
+<!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ad cum corporis!</p> -->
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor illum fugit dicta </p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+<button class="btn">Order Now</button>
+</section>
+
+
+<section class="services-container">
+    <h1 class="h-primary">Our services</h1>
+    <div id="services">
+        <div class="box">
+       <img src="catering.JPEG" alt="">
+    <h2 class="h-secondry">Food Ordering</h2>
+    <p class="center">Lorem ipsudipisicing elit. Blanditiis magni ducimus facilis.provident ipsum quasi voluptas ab. Ullam quercitationem accusamus. pariatur. Error veritatis consequuntur assumenda.a</p>    
+</div>
+        <div class="box">
+            <img src="foodordering.JPEG" alt="">
+         <h2 class="h-secondry">Catering</h2>
+         <p class="center">provident ipsum quasi voluptas ab. Ullam qui esse sunt doloremque, necessitatibus exercitationem accusamus. Corporis, reiciendis pariatur. Error veritatis consequuntur assumenda.a</p>
+             </div>
+             <div class="box">
+                <img src="foodelivery.JPEG" alt="">
+             <h2 class="h-secondry">Food Delivery</h2>
+             <p class="center">providenas ab. Ullam qui esse sunt doloremque, necessitatibus exercitationem accusamus. Corporis, reiciendis pariatur. Error veritatis consequuntur assumenda.a</p>
+             
+            </div>
+    
+     
+    </section>
+<!-- client section -->
+<section id="clientsection">
+    <hr>
+<h1 class="h-primarycenter"> Our Clients </h1>
+<div id="clients">
+    <div class="client-item">
+        <img src="apple.JPEG" alt="">
+        </div>
+        <div class="client-item">
+            <img src="37.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="316.png" alt="">
+                </div>
+                <div class="client-item">
+                    <img src="564.jpg" alt="">
+                    </div>
+                    <div class="client-item">
+                        <img src="269527.png" alt="">
+                        </div>
+</div>
+<hr>
+</section>
+
+<section id="contact">
+
+<h1 class="h primary-center">Contact Us</h1>
+<div id="contactbox">
+<form action="">
+<div class="form-group">
+<label for="name">Name:</label>
+<input type="text" name="name" id="name" placeholder="Enter your name">
+</div>
+<div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" name="name" id="name" placeholder="Enter your Email">
+    </div>
+    <div class="form-group">
+        <label for="phone number">Phone Number:</label>
+        <input type="phone number" name="name" id="name" placeholder="Enter your Phone Number">
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+            </div>   
+</form>
+</div>
+</section>
+
+
+
+<footer>
+<div class="c-center">
+Copyright &copy; www.MyOnlineMeal.com .All rights reserved
+</div>
+
+
+</footer>
+</body>
+</html>
